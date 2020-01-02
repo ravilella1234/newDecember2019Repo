@@ -3,6 +3,7 @@ package com.browsers;
 import java.io.FileInputStream;
 import java.util.Properties;
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
@@ -72,5 +73,18 @@ public class BaseTest
 		//driver.get(eprop.getProperty(url));
 		driver.navigate().to(eprop.getProperty(url));
 	}
+	
+	public static void clickElement(String locatorKey) {
+		driver.findElement(By.xpath(locatorKey)).click();
+	}
+
+	public static void typeValue(String locatorKey, String value) {
+		driver.findElement(By.name(locatorKey)).sendKeys(value);
+	}
+
+	public static void selectOption(String locatorKey, String item) {
+		driver.findElement(By.id(locatorKey)).sendKeys(item);
+	}
+
 
 }
