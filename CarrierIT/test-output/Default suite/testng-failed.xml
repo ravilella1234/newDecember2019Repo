@@ -3,13 +3,12 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.project.CarrierIT.testng.TestDependency">
+      <class name="com.excels.FaceBook">
         <methods>
-          <include name="blue"/>
-          <include name="white"/>
-          <include name="orange"/>
+          <include name="fb"/>
+          <include name="startProcess"/>
         </methods>
-      </class> <!-- com.project.CarrierIT.testng.TestDependency -->
+      </class> <!-- com.excels.FaceBook -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

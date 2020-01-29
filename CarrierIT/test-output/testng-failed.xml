@@ -1,20 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
-  <listeners>
-    <listener class-name="com.listners.Listener"/>
-    <listener class-name="com.listners.RetryListener"/>
-  </listeners>
-  <test thread-count="5" name="Test(failed)">
-    <parameter name="browser" value="chrome"/>
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
+  <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.project.CarrierIT.testng.TC_008">
+      <class name="com.excels.FaceBook">
         <methods>
-          <include name="endProcess"/>
+          <include name="fb"/>
           <include name="startProcess"/>
-          <include name="amazon"/>
         </methods>
-      </class> <!-- com.project.CarrierIT.testng.TC_008 -->
+      </class> <!-- com.excels.FaceBook -->
     </classes>
-  </test> <!-- Test(failed) -->
-</suite> <!-- Failed suite [Suite] -->
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->
