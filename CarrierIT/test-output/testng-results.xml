@@ -2,27 +2,43 @@
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="28967" started-at="2020-01-29T13:49:17Z" finished-at="2020-01-29T13:49:46Z">
+  <suite name="Default suite" duration-ms="1497" started-at="2020-01-30T13:56:03Z" finished-at="2020-01-30T13:56:04Z">
     <groups>
     </groups>
-    <test name="Test" duration-ms="28967" started-at="2020-01-29T13:49:17Z" finished-at="2020-01-29T13:49:46Z">
-      <class name="com.excels.FaceBook">
-        <test-method status="PASS" signature="startProcess(java.lang.String)[pri:0, instance:com.excels.FaceBook@3b2cf7ab]" name="startProcess" is-config="true" duration-ms="14785" started-at="2020-01-29T13:49:17Z" finished-at="2020-01-29T13:49:32Z">
+    <test name="Default test" duration-ms="1497" started-at="2020-01-30T13:56:03Z" finished-at="2020-01-30T13:56:04Z">
+      <class name="com.excels.TestA">
+        <test-method status="PASS" signature="testB(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.excels.TestA@61832929]" name="testB" duration-ms="19" started-at="2020-01-30T13:56:04Z" data-provider="getData" finished-at="2020-01-30T13:56:04Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[chrome]]>
+                <![CDATA[Y]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Dummy1]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Dummy2]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Dummy3]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[Dummy4]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- startProcess -->
-        <test-method status="PASS" signature="fb()[pri:0, instance:com.excels.FaceBook@3b2cf7ab]" name="fb" duration-ms="14133" started-at="2020-01-29T13:49:32Z" finished-at="2020-01-29T13:49:46Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- fb -->
-      </class> <!-- com.excels.FaceBook -->
-    </test> <!-- Test -->
-  </suite> <!-- Suite -->
+        </test-method> <!-- testB -->
+      </class> <!-- com.excels.TestA -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>
