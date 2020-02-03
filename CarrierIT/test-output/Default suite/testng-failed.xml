@@ -3,11 +3,13 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.excels.TC_003">
+      <class name="com.POM.POM_001">
         <methods>
-          <include name="f" invocation-numbers="1 2"/>
+          <include name="endProcess"/>
+          <include name="startProcess"/>
+          <include name="login"/>
         </methods>
-      </class> <!-- com.excels.TC_003 -->
+      </class> <!-- com.POM.POM_001 -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
