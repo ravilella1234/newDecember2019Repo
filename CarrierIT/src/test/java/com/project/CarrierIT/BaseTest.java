@@ -5,6 +5,7 @@ import java.io.FileInputStream;
 import java.io.IOException;
 import java.util.Date;
 import java.util.Properties;
+import java.util.concurrent.TimeUnit;
 
 import org.apache.log4j.PropertyConfigurator;
 import org.openqa.selenium.By;
@@ -19,6 +20,9 @@ import org.openqa.selenium.firefox.FirefoxOptions;
 import org.openqa.selenium.firefox.FirefoxProfile;
 import org.openqa.selenium.firefox.ProfilesIni;
 import org.openqa.selenium.io.FileHandler;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.Select;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
 import com.relevantcodes.extentreports.ExtentReports;
 import com.relevantcodes.extentreports.ExtentTest;
@@ -102,6 +106,7 @@ public class BaseTest
 	{
 		//driver.get(eprop.getProperty(url));
 		driver.navigate().to(eprop.getProperty(url));
+		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 	}
 	
 	public static void clickElement(String locatorKey) {
@@ -178,6 +183,19 @@ public class BaseTest
 		
 		//put screen shot file in extent reports
 		test.log(LogStatus.INFO, "Screenshot --> "+ test.addScreenCapture(projectPath+"//failure//"+filePath+".png"));
+	}
+	
+	
+	public static void waitforElement(WebElement element,int timeoutInSeconds)
+	{
+		WebDriverWait wait=new WebDriverWait(driver, timeoutInSeconds);
+		wait.until(ExpectedConditions.elementToBeClickable(element));
+	}
+	
+	public static void selectItem(WebElement element, int index)
+	{
+		Select sel=new Select(element);
+		sel.selectByIndex(index);
 	}
 
 

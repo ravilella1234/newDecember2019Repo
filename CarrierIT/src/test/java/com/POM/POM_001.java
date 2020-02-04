@@ -11,6 +11,7 @@ import com.project.CarrierIT.BaseTest;
 public class POM_001 extends BaseTest
 {
 	LoginPage page;
+	CustomerRegistration register;
 	
   
   @BeforeTest
@@ -22,7 +23,7 @@ public class POM_001 extends BaseTest
 	  navigateUrl("automationurl");
   }
   
-  @Test
+  @Test(enabled = false)
   public void login() 
   {
 	  page=new LoginPage(driver);
@@ -30,6 +31,13 @@ public class POM_001 extends BaseTest
 	  
 	  String expectedError="Authentication failed";
 	  Assert.assertEquals(page.getLoginError(), expectedError);
+  }
+  
+  @Test
+  public void registration() throws Exception
+  {
+	register =new CustomerRegistration(driver);
+	register.customerRegistration();
   }
 
   @AfterTest

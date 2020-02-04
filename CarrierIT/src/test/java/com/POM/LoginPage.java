@@ -14,11 +14,11 @@ public class LoginPage
 	@FindBy(xpath="//li[contains(text(),'Authentication failed.')]")public WebElement loginError;
 	
 	
-	public LoginPage(WebDriver driver)
-	{
-		PageFactory.initElements(driver, this);
-	}
-
+	  public LoginPage(WebDriver driver) 
+	  { 
+		  PageFactory.initElements(driver, this);
+	  }
+	 
 
 	public void customerLogin()
 	{

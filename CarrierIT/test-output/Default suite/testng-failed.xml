@@ -7,7 +7,7 @@
         <methods>
           <include name="endProcess"/>
           <include name="startProcess"/>
-          <include name="login"/>
+          <include name="registration"/>
         </methods>
       </class> <!-- com.POM.POM_001 -->
     </classes>
