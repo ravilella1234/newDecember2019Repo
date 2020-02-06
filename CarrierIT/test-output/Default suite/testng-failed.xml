@@ -3,13 +3,11 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.POM.POM_001">
+      <class name="com.frames.FrameDemo">
         <methods>
-          <include name="endProcess"/>
-          <include name="startProcess"/>
-          <include name="registration"/>
+          <include name="frame"/>
         </methods>
-      </class> <!-- com.POM.POM_001 -->
+      </class> <!-- com.frames.FrameDemo -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

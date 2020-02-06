@@ -1,32 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="1" total="2" passed="1">
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="21270" started-at="2020-02-04T14:10:51Z" finished-at="2020-02-04T14:11:12Z">
+  <suite name="Default suite" duration-ms="18066" started-at="2020-02-06T13:28:37Z" finished-at="2020-02-06T13:28:56Z">
     <groups>
     </groups>
-    <test name="Test" duration-ms="21270" started-at="2020-02-04T14:10:51Z" finished-at="2020-02-04T14:11:12Z">
-      <class name="com.POM.POM_001">
-        <test-method status="PASS" signature="startProcess(java.lang.String)[pri:0, instance:com.POM.POM_001@2aa5fe93]" name="startProcess" is-config="true" duration-ms="9759" started-at="2020-02-04T14:10:51Z" finished-at="2020-02-04T14:11:01Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[chrome]]>
-              </value>
-            </param>
-          </params>
+    <test name="Default test" duration-ms="18066" started-at="2020-02-06T13:28:37Z" finished-at="2020-02-06T13:28:56Z">
+      <class name="com.frames.FrameDemo">
+        <test-method status="PASS" signature="frame()[pri:0, instance:com.frames.FrameDemo@3532ec19]" name="frame" duration-ms="17997" started-at="2020-02-06T13:28:38Z" finished-at="2020-02-06T13:28:56Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- startProcess -->
-        <test-method status="PASS" signature="registration()[pri:0, instance:com.POM.POM_001@2aa5fe93]" name="registration" duration-ms="11470" started-at="2020-02-04T14:11:01Z" finished-at="2020-02-04T14:11:12Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- registration -->
-        <test-method status="PASS" signature="endProcess()[pri:0, instance:com.POM.POM_001@2aa5fe93]" name="endProcess" is-config="true" duration-ms="0" started-at="2020-02-04T14:11:12Z" finished-at="2020-02-04T14:11:12Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- endProcess -->
-      </class> <!-- com.POM.POM_001 -->
-    </test> <!-- Test -->
-  </suite> <!-- Suite -->
+        </test-method> <!-- frame -->
+      </class> <!-- com.frames.FrameDemo -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>
