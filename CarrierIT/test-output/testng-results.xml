@@ -1,17 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+<testng-results skipped="0" failed="0" ignored="6" total="7" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="18066" started-at="2020-02-06T13:28:37Z" finished-at="2020-02-06T13:28:56Z">
+  <suite name="Default suite" duration-ms="21942" started-at="2020-02-10T13:38:56Z" finished-at="2020-02-10T13:39:17Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="18066" started-at="2020-02-06T13:28:37Z" finished-at="2020-02-06T13:28:56Z">
-      <class name="com.frames.FrameDemo">
-        <test-method status="PASS" signature="frame()[pri:0, instance:com.frames.FrameDemo@3532ec19]" name="frame" duration-ms="17997" started-at="2020-02-06T13:28:38Z" finished-at="2020-02-06T13:28:56Z">
+    <test name="Default test" duration-ms="21942" started-at="2020-02-10T13:38:56Z" finished-at="2020-02-10T13:39:17Z">
+      <class name="actionsAndJavaScriptExecutors.MouseOperations">
+        <test-method status="PASS" signature="setup()[pri:0, instance:actionsAndJavaScriptExecutors.MouseOperations@5e3a8624]" name="setup" is-config="true" duration-ms="12337" started-at="2020-02-10T13:38:56Z" finished-at="2020-02-10T13:39:08Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- frame -->
-      </class> <!-- com.frames.FrameDemo -->
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="autoSuggestion()[pri:7, instance:actionsAndJavaScriptExecutors.MouseOperations@5e3a8624]" name="autoSuggestion" duration-ms="9542" started-at="2020-02-10T13:39:08Z" finished-at="2020-02-10T13:39:17Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- autoSuggestion -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:actionsAndJavaScriptExecutors.MouseOperations@5e3a8624]" name="tearDown" is-config="true" duration-ms="2" started-at="2020-02-10T13:39:17Z" finished-at="2020-02-10T13:39:17Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- actionsAndJavaScriptExecutors.MouseOperations -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
