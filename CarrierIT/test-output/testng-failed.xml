@@ -3,13 +3,13 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="actionsAndJavaScriptExecutors.MouseOperations">
+      <class name="webtables.WebTables">
         <methods>
-          <include name="setup"/>
+          <include name="setUp"/>
           <include name="tearDown"/>
-          <include name="MoveToelement"/>
+          <include name="dynamicTable"/>
         </methods>
-      </class> <!-- actionsAndJavaScriptExecutors.MouseOperations -->
+      </class> <!-- webtables.WebTables -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
