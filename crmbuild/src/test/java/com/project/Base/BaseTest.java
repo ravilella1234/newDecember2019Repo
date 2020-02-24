@@ -5,12 +5,15 @@ import java.util.Properties;
 
 import org.testng.annotations.BeforeTest;
 
+import com.project.utilities.ExcelAPI;
+
 public class BaseTest 
 {
 	public String projectpath=System.getProperty("user.dir");
 	public FileInputStream fis;
 	public Properties mainProp;
 	public Properties envProp;
+	public ExcelAPI xls;
 	
 	
 	@BeforeTest
@@ -29,6 +32,9 @@ public class BaseTest
 		envProp.load(fis);
 		String val = envProp.getProperty("zohourl");
 		System.out.println(val);
+		
+		xls=new ExcelAPI(envProp.getProperty("suitex_xls"));
+		
 	}
 
 }
