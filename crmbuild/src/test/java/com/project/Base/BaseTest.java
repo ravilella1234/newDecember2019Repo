@@ -14,12 +14,20 @@ public class BaseTest
 	public Properties mainProp;
 	public Properties envProp;
 	public ExcelAPI xls;
+	public String testName;
 	
 	
 	@BeforeTest
 	public void init() throws Exception
 	{
 		System.out.println("iam beforeTest from BaseTest");
+		
+		String[] pack = this.getClass().getPackage().getName().split("\\.");
+		String suiteName = pack[pack.length-1];
+		System.out.println(suiteName);
+		
+		testName = this.getClass().getSimpleName();
+		System.out.println(testName);
 		
 		fis=new FileInputStream(projectpath+"//src//test//resources//environment.properties");
 		mainProp=new Properties();
@@ -33,8 +41,8 @@ public class BaseTest
 		String val = envProp.getProperty("zohourl");
 		System.out.println(val);
 		
-		xls=new ExcelAPI(envProp.getProperty("suitex_xls"));
-		
+		// Excel Inilize
+		xls=new ExcelAPI(envProp.getProperty(suiteName+"_xls"));
 	}
 
 }
