@@ -5,7 +5,7 @@
     <classes>
       <class name="com.project.suitex.LoginTest">
         <methods>
-          <include name="f"/>
+          <include name="f" invocation-numbers="1"/>
           <include name="init"/>
         </methods>
       </class> <!-- com.project.suitex.LoginTest -->

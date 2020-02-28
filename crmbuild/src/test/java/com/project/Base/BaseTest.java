@@ -5,6 +5,7 @@ import java.util.Properties;
 
 import org.testng.annotations.BeforeTest;
 
+import com.project.drivercalss.DriverScript;
 import com.project.utilities.ExcelAPI;
 
 public class BaseTest 
@@ -15,6 +16,7 @@ public class BaseTest
 	public Properties envProp;
 	public ExcelAPI xls;
 	public String testName;
+	public DriverScript ds;
 	
 	
 	@BeforeTest
@@ -43,6 +45,11 @@ public class BaseTest
 		
 		// Excel Inilize
 		xls=new ExcelAPI(envProp.getProperty(suiteName+"_xls"));
+		
+		//init DS
+		ds=new DriverScript();
+		ds.setEnvProp(envProp);
+		ds.setMainProp(mainProp);
 	}
 
 }
