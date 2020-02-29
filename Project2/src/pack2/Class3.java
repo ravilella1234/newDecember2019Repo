@@ -4,7 +4,8 @@ import pack1.Class1;
 
 public class Class3 extends Class1
 {
-
+	int x=10,y=20,c;
+	
 	public Class3(int a, int b) {
 		super(a, b);
 		// TODO Auto-generated constructor stub
