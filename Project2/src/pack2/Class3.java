@@ -4,6 +4,7 @@ import pack1.Class1;
 
 public class Class3 extends Class1
 {
+	int p=12,q=23,r;
 
 	public Class3(int a, int b) {
 		super(a, b);
