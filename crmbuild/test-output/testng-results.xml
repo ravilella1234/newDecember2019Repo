@@ -2,16 +2,16 @@
 <testng-results skipped="1" failed="0" ignored="0" total="2" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="1631" started-at="2020-02-28T14:04:23Z" finished-at="2020-02-28T14:04:25Z">
+  <suite name="Default suite" duration-ms="1485" started-at="2020-03-02T13:57:06Z" finished-at="2020-03-02T13:57:08Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="1631" started-at="2020-02-28T14:04:23Z" finished-at="2020-02-28T14:04:25Z">
+    <test name="Default test" duration-ms="1485" started-at="2020-03-02T13:57:06Z" finished-at="2020-03-02T13:57:08Z">
       <class name="com.project.suitex.LoginTest">
-        <test-method status="PASS" signature="init()[pri:0, instance:com.project.suitex.LoginTest@604ed9f0]" name="init" is-config="true" duration-ms="1483" started-at="2020-02-28T14:04:23Z" finished-at="2020-02-28T14:04:24Z">
+        <test-method status="PASS" signature="init()[pri:0, instance:com.project.suitex.LoginTest@604ed9f0]" name="init" is-config="true" duration-ms="1359" started-at="2020-03-02T13:57:06Z" finished-at="2020-03-02T13:57:08Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- init -->
-        <test-method status="PASS" signature="f(java.util.Hashtable)[pri:0, instance:com.project.suitex.LoginTest@604ed9f0]" name="f" duration-ms="42" started-at="2020-02-28T14:04:25Z" data-provider="getdata" finished-at="2020-02-28T14:04:25Z">
+        <test-method status="PASS" signature="f(java.util.Hashtable)[pri:0, instance:com.project.suitex.LoginTest@604ed9f0]" name="f" duration-ms="36" started-at="2020-03-02T13:57:08Z" data-provider="getdata" finished-at="2020-03-02T13:57:08Z">
           <params>
             <param index="0">
               <value>
@@ -22,7 +22,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- f -->
-        <test-method status="SKIP" signature="f(java.util.Hashtable)[pri:0, instance:com.project.suitex.LoginTest@604ed9f0]" name="f" duration-ms="5" started-at="2020-02-28T14:04:25Z" data-provider="getdata" finished-at="2020-02-28T14:04:25Z">
+        <test-method status="SKIP" signature="f(java.util.Hashtable)[pri:0, instance:com.project.suitex.LoginTest@604ed9f0]" name="f" duration-ms="4" started-at="2020-03-02T13:57:08Z" data-provider="getdata" finished-at="2020-03-02T13:57:08Z">
           <params>
             <param index="0">
               <value>

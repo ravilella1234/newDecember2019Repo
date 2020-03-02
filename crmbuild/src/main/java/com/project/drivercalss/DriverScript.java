@@ -3,13 +3,14 @@ package com.project.drivercalss;
 import java.util.Hashtable;
 import java.util.Properties;
 
+import com.project.keywords.AppKeyword;
 import com.project.utilities.ExcelAPI;
 
 public class DriverScript 
 {
 	public Properties mainProp;
 	public Properties envProp;
-	
+	public AppKeyword app;
 
 	
 	public Properties getMainProp() {
@@ -38,6 +39,12 @@ public class DriverScript
 		System.out.println("iam driverscript");
 		int rows = xls.getRowCount("keywords");
 		System.out.println("Rows : " + rows);
+		app=new AppKeyword();
+		app.setEnvProp(envProp);
+		app.setMainProp(mainProp);
+		
+		//send the  data
+		app.setData(h);
 		
 		for(int rNum=1;rNum<rows;rNum++)
 		{
@@ -48,7 +55,21 @@ public class DriverScript
 				String objectKey = xls.getCellData("keywords", "Object", rNum);
 				String dataKey = xls.getCellData("keywords", "Data", rNum);
 				String data = h.get(dataKey);
-				System.out.println(tcid + "----" + keyword + "----" + mainProp.getProperty(objectKey) + "----" +data);
+				//System.out.println(tcid + "----" + keyword + "----" + mainProp.getProperty(objectKey) + "----" +data);
+				app.setDataKey(dataKey);
+				app.setObjectKey(objectKey);
+				
+				
+				if(keyword.equals("openBrowser"))
+					app.openBrowser();
+				else if(keyword.equals("navigateUrl"))
+					app.navigateUrl();
+				else if(keyword.equals("clickElement"))
+					app.clickElement();
+				else if(keyword.equals("type"))
+					app.type();
+				else if(keyword.equals("validateLogin"))
+					app.validateLogin();
 			}
 		}
 	}
