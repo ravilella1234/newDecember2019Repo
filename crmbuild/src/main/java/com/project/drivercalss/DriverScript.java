@@ -30,7 +30,11 @@ public class DriverScript
 		this.envProp = envProp;
 	}
 
-
+	public void quit()
+	{
+		if(app!=null)
+		app.quit();
+	}
 
 
 

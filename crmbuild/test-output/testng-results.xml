@@ -2,27 +2,39 @@
 <testng-results skipped="1" failed="0" ignored="0" total="2" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="1485" started-at="2020-03-02T13:57:06Z" finished-at="2020-03-02T13:57:08Z">
+  <suite name="Default suite" duration-ms="23951" started-at="2020-03-03T13:57:58Z" finished-at="2020-03-03T13:58:22Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="1485" started-at="2020-03-02T13:57:06Z" finished-at="2020-03-02T13:57:08Z">
+    <test name="Default test" duration-ms="23951" started-at="2020-03-03T13:57:58Z" finished-at="2020-03-03T13:58:22Z">
       <class name="com.project.suitex.LoginTest">
-        <test-method status="PASS" signature="init()[pri:0, instance:com.project.suitex.LoginTest@604ed9f0]" name="init" is-config="true" duration-ms="1359" started-at="2020-03-02T13:57:06Z" finished-at="2020-03-02T13:57:08Z">
+        <test-method status="PASS" signature="init()[pri:0, instance:com.project.suitex.LoginTest@685cb137]" name="init" is-config="true" duration-ms="1445" started-at="2020-03-03T13:57:58Z" finished-at="2020-03-03T13:57:59Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- init -->
-        <test-method status="PASS" signature="f(java.util.Hashtable)[pri:0, instance:com.project.suitex.LoginTest@604ed9f0]" name="f" duration-ms="36" started-at="2020-03-02T13:57:08Z" data-provider="getdata" finished-at="2020-03-02T13:57:08Z">
+        <test-method status="PASS" signature="initMethod()[pri:0, instance:com.project.suitex.LoginTest@685cb137]" name="initMethod" is-config="true" duration-ms="1" started-at="2020-03-03T13:57:59Z" finished-at="2020-03-03T13:57:59Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initMethod -->
+        <test-method status="PASS" signature="f(java.util.Hashtable)[pri:0, instance:com.project.suitex.LoginTest@685cb137]" name="f" duration-ms="21228" started-at="2020-03-03T13:57:59Z" data-provider="getdata" finished-at="2020-03-03T13:58:20Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[{ExpectedResult=LoginSuccuss, RunMode=Y, UserPassword=password1, UserName=user1, Browser=chrome}]]>
+                <![CDATA[{ExpectedResult=LoginSuccuss, RunMode=Y, UserPassword=zoho2015, UserName=ravilella.2015@gmail.com, Browser=chrome}]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- f -->
-        <test-method status="SKIP" signature="f(java.util.Hashtable)[pri:0, instance:com.project.suitex.LoginTest@604ed9f0]" name="f" duration-ms="4" started-at="2020-03-02T13:57:08Z" data-provider="getdata" finished-at="2020-03-02T13:57:08Z">
+        <test-method status="PASS" signature="quit()[pri:0, instance:com.project.suitex.LoginTest@685cb137]" name="quit" is-config="true" duration-ms="1190" started-at="2020-03-03T13:58:20Z" finished-at="2020-03-03T13:58:22Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quit -->
+        <test-method status="PASS" signature="initMethod()[pri:0, instance:com.project.suitex.LoginTest@685cb137]" name="initMethod" is-config="true" duration-ms="1" started-at="2020-03-03T13:58:22Z" finished-at="2020-03-03T13:58:22Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initMethod -->
+        <test-method status="SKIP" signature="f(java.util.Hashtable)[pri:0, instance:com.project.suitex.LoginTest@685cb137]" name="f" duration-ms="2" started-at="2020-03-03T13:58:22Z" data-provider="getdata" finished-at="2020-03-03T13:58:22Z">
           <params>
             <param index="0">
               <value>
@@ -68,6 +80,10 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- f -->
+        <test-method status="PASS" signature="quit()[pri:0, instance:com.project.suitex.LoginTest@685cb137]" name="quit" is-config="true" duration-ms="0" started-at="2020-03-03T13:58:22Z" finished-at="2020-03-03T13:58:22Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quit -->
       </class> <!-- com.project.suitex.LoginTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
