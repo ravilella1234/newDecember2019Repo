@@ -2,20 +2,20 @@
 <testng-results skipped="1" failed="0" ignored="0" total="2" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="23951" started-at="2020-03-03T13:57:58Z" finished-at="2020-03-03T13:58:22Z">
+  <suite name="Default suite" duration-ms="24621" started-at="2020-03-04T14:01:45Z" finished-at="2020-03-04T14:02:10Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="23951" started-at="2020-03-03T13:57:58Z" finished-at="2020-03-03T13:58:22Z">
+    <test name="Default test" duration-ms="24621" started-at="2020-03-04T14:01:45Z" finished-at="2020-03-04T14:02:10Z">
       <class name="com.project.suitex.LoginTest">
-        <test-method status="PASS" signature="init()[pri:0, instance:com.project.suitex.LoginTest@685cb137]" name="init" is-config="true" duration-ms="1445" started-at="2020-03-03T13:57:58Z" finished-at="2020-03-03T13:57:59Z">
+        <test-method status="PASS" signature="init()[pri:0, instance:com.project.suitex.LoginTest@685cb137]" name="init" is-config="true" duration-ms="1302" started-at="2020-03-04T14:01:45Z" finished-at="2020-03-04T14:01:47Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- init -->
-        <test-method status="PASS" signature="initMethod()[pri:0, instance:com.project.suitex.LoginTest@685cb137]" name="initMethod" is-config="true" duration-ms="1" started-at="2020-03-03T13:57:59Z" finished-at="2020-03-03T13:57:59Z">
+        <test-method status="PASS" signature="initMethod()[pri:0, instance:com.project.suitex.LoginTest@685cb137]" name="initMethod" is-config="true" duration-ms="1" started-at="2020-03-04T14:01:47Z" finished-at="2020-03-04T14:01:47Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initMethod -->
-        <test-method status="PASS" signature="f(java.util.Hashtable)[pri:0, instance:com.project.suitex.LoginTest@685cb137]" name="f" duration-ms="21228" started-at="2020-03-03T13:57:59Z" data-provider="getdata" finished-at="2020-03-03T13:58:20Z">
+        <test-method status="PASS" signature="f(java.util.Hashtable)[pri:0, instance:com.project.suitex.LoginTest@685cb137]" name="f" duration-ms="22146" started-at="2020-03-04T14:01:47Z" data-provider="getdata" finished-at="2020-03-04T14:02:09Z">
           <params>
             <param index="0">
               <value>
@@ -26,15 +26,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- f -->
-        <test-method status="PASS" signature="quit()[pri:0, instance:com.project.suitex.LoginTest@685cb137]" name="quit" is-config="true" duration-ms="1190" started-at="2020-03-03T13:58:20Z" finished-at="2020-03-03T13:58:22Z">
+        <test-method status="PASS" signature="quit()[pri:0, instance:com.project.suitex.LoginTest@685cb137]" name="quit" is-config="true" duration-ms="1089" started-at="2020-03-04T14:02:09Z" finished-at="2020-03-04T14:02:10Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- quit -->
-        <test-method status="PASS" signature="initMethod()[pri:0, instance:com.project.suitex.LoginTest@685cb137]" name="initMethod" is-config="true" duration-ms="1" started-at="2020-03-03T13:58:22Z" finished-at="2020-03-03T13:58:22Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- initMethod -->
-        <test-method status="SKIP" signature="f(java.util.Hashtable)[pri:0, instance:com.project.suitex.LoginTest@685cb137]" name="f" duration-ms="2" started-at="2020-03-03T13:58:22Z" data-provider="getdata" finished-at="2020-03-03T13:58:22Z">
+        <test-method status="SKIP" signature="f(java.util.Hashtable)[pri:0, instance:com.project.suitex.LoginTest@685cb137]" name="f" duration-ms="3" started-at="2020-03-04T14:02:10Z" data-provider="getdata" finished-at="2020-03-04T14:02:10Z">
           <params>
             <param index="0">
               <value>
@@ -48,7 +44,7 @@
             </message>
             <full-stacktrace>
               <![CDATA[org.testng.SkipException: Run mode is set to No....
-at com.project.suitex.LoginTest.f(LoginTest.java:22)
+at com.project.suitex.LoginTest.f(LoginTest.java:23)
 at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -80,7 +76,11 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- f -->
-        <test-method status="PASS" signature="quit()[pri:0, instance:com.project.suitex.LoginTest@685cb137]" name="quit" is-config="true" duration-ms="0" started-at="2020-03-03T13:58:22Z" finished-at="2020-03-03T13:58:22Z">
+        <test-method status="PASS" signature="initMethod()[pri:0, instance:com.project.suitex.LoginTest@685cb137]" name="initMethod" is-config="true" duration-ms="0" started-at="2020-03-04T14:02:10Z" finished-at="2020-03-04T14:02:10Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initMethod -->
+        <test-method status="PASS" signature="quit()[pri:0, instance:com.project.suitex.LoginTest@685cb137]" name="quit" is-config="true" duration-ms="1" started-at="2020-03-04T14:02:10Z" finished-at="2020-03-04T14:02:10Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- quit -->
